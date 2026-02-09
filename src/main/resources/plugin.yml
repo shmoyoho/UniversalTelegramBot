@@ -1,0 +1,30 @@
+name: UniversalTelegramBot
+version: 2.0.0
+main: me.yourname.telegrambot.UniversalTelegramBot
+api-version: "1.21"
+description: Универсальный Telegram бот для выполнения команд Minecraft
+author: YourName
+website: https://example.com
+
+commands:
+  telegrambot:
+    description: Управление плагином Telegram Bot
+    usage: /<command> [reload|status|debug|test|list|execute|addperm|removeperm|listperms]
+    aliases: [tgbot, tg]
+
+permissions:
+  telegrambot.admin:
+    description: Полный доступ к плагину Telegram Bot
+    default: op
+  telegrambot.restart:
+    description: Разрешение на использование команды /restart через Telegram
+    default: false
+  telegrambot.ban:
+    description: Разрешение на использование команд бана через Telegram
+    default: false
+  telegrambot.kick:
+    description: Разрешение на использование команд кика через Telegram
+    default: false
+  telegrambot.admincommands:
+    description: Разрешение на использование всех админ-команд через Telegram
+    default: false
